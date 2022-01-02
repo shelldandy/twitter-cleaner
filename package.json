@@ -1,0 +1,30 @@
+{
+  "name": "twitter-cleaner",
+  "version": "1.0.0",
+  "description": "personal twitter stuff",
+  "main": "index.js",
+  "author": "Miguel Palau Zarza <mpalauzarza@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
+    "jsonfile": "^6.1.0",
+    "sleep": "^6.3.0",
+    "twitter": "^1.7.1",
+    "twitter-lite": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index",
+    "debug": "node inspect -r dotenv/config index",
+    "untweet": "node -r dotenv/config untweet",
+    "debug-tweet": "node inspect -r dotenv/config untweet"
+  }
+}
